@@ -1,0 +1,8 @@
+version: 2
+
+source:
+  - name: dpu
+    database: aqi_project
+    schema: public
+    tables:
+      - name: aqi_data

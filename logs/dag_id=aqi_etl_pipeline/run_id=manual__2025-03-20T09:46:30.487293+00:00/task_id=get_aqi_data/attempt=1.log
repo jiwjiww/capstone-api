@@ -1,0 +1,28 @@
+[2025-03-20T09:46:34.013+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-20T09:46:34.037+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aqi_etl_pipeline.get_aqi_data manual__2025-03-20T09:46:30.487293+00:00 [queued]>
+[2025-03-20T09:46:34.047+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aqi_etl_pipeline.get_aqi_data manual__2025-03-20T09:46:30.487293+00:00 [queued]>
+[2025-03-20T09:46:34.047+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-03-20T09:46:34.068+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): get_aqi_data> on 2025-03-20 09:46:30.487293+00:00
+[2025-03-20T09:46:34.098+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=4499) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-03-20T09:46:34.100+0000] {standard_task_runner.py:72} INFO - Started process 4525 to run task
+[2025-03-20T09:46:34.101+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'aqi_etl_pipeline', 'get_aqi_data', 'manual__2025-03-20T09:46:30.487293+00:00', '--job-id', '64', '--raw', '--subdir', 'DAGS_FOLDER/api_etl_pipeline.py', '--cfg-path', '/tmp/tmp0zne7ss8']
+[2025-03-20T09:46:34.102+0000] {standard_task_runner.py:105} INFO - Job 64: Subtask get_aqi_data
+[2025-03-20T09:46:34.188+0000] {task_command.py:467} INFO - Running <TaskInstance: aqi_etl_pipeline.get_aqi_data manual__2025-03-20T09:46:30.487293+00:00 [running]> on host 1a0dfda72c05
+[2025-03-20T09:46:34.395+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='aqi_etl_pipeline' AIRFLOW_CTX_TASK_ID='get_aqi_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-20T09:46:30.487293+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-20T09:46:30.487293+00:00'
+[2025-03-20T09:46:34.398+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-20T09:46:34.399+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-20T09:46:34.399+0000] {logging_mixin.py:190} INFO - Current task name:get_aqi_data state:running start_date:2025-03-20 09:46:34.038359+00:00
+[2025-03-20T09:46:34.399+0000] {logging_mixin.py:190} INFO - Dag name:aqi_etl_pipeline and current dag run status:running
+[2025-03-20T09:46:34.400+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-20T09:46:34.790+0000] {logging_mixin.py:190} INFO - https://api.airvisual.com/v2/city?city=Bangkok&state=Bangkok&country=Thailand&key=***
+[2025-03-20T09:46:34.790+0000] {logging_mixin.py:190} INFO - {'status': 'success', 'data': {'city': 'Bangkok', 'state': 'Bangkok', 'country': 'Thailand', 'location': {'type': 'Point', 'coordinates': [100.4888394, 13.7292915]}, 'current': {'pollution': {'ts': '2025-03-20T09:00:00.000Z', 'aqius': 112, 'mainus': 'p2', 'aqicn': 70, 'maincn': 'p1'}, 'weather': {'ts': '2025-03-20T09:00:00.000Z', 'tp': 34, 'pr': 1011, 'hu': 37, 'ws': 2.49, 'wd': 63, 'ic': '04d'}}}}
+[2025-03-20T09:46:34.792+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-20T09:46:34.800+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-20T09:46:34.800+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=aqi_etl_pipeline, task_id=get_aqi_data, run_id=manual__2025-03-20T09:46:30.487293+00:00, execution_date=20250320T094630, start_date=20250320T094634, end_date=20250320T094634
+[2025-03-20T09:46:34.807+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-20T09:46:34.807+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-20T09:46:34.808+0000] {logging_mixin.py:190} INFO - Dag name:aqi_etl_pipeline queued_at:2025-03-20 09:46:30.506964+00:00
+[2025-03-20T09:46:34.808+0000] {logging_mixin.py:190} INFO - Task hostname:1a0dfda72c05 operator:PythonOperator
+[2025-03-20T09:46:34.843+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-20T09:46:34.863+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-20T09:46:34.866+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
