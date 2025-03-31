@@ -1,0 +1,26 @@
+[2025-03-30T10:39:37.288+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-30T10:39:37.397+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aqi_etl_pipeline.get_aqi_data_Nonthaburi manual__2025-03-30T10:39:26.348292+00:00 [queued]>
+[2025-03-30T10:39:37.474+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aqi_etl_pipeline.get_aqi_data_Nonthaburi manual__2025-03-30T10:39:26.348292+00:00 [queued]>
+[2025-03-30T10:39:37.475+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-03-30T10:39:37.708+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): get_aqi_data_Nonthaburi> on 2025-03-30 10:39:26.348292+00:00
+[2025-03-30T10:39:37.845+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=52983) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-03-30T10:39:37.854+0000] {standard_task_runner.py:72} INFO - Started process 53069 to run task
+[2025-03-30T10:39:37.833+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'aqi_etl_pipeline', 'get_aqi_data_Nonthaburi', 'manual__2025-03-30T10:39:26.348292+00:00', '--job-id', '504', '--raw', '--subdir', 'DAGS_FOLDER/api_etl_pipeline.py', '--cfg-path', '/tmp/tmpy6x8rpcx']
+[2025-03-30T10:39:37.858+0000] {standard_task_runner.py:105} INFO - Job 504: Subtask get_aqi_data_Nonthaburi
+[2025-03-30T10:39:38.039+0000] {task_command.py:467} INFO - Running <TaskInstance: aqi_etl_pipeline.get_aqi_data_Nonthaburi manual__2025-03-30T10:39:26.348292+00:00 [running]> on host 58b9640d9ecf
+[2025-03-30T10:39:38.451+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='aqi_etl_pipeline' AIRFLOW_CTX_TASK_ID='get_aqi_data_Nonthaburi' AIRFLOW_CTX_EXECUTION_DATE='2025-03-30T10:39:26.348292+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-30T10:39:26.348292+00:00'
+[2025-03-30T10:39:38.454+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-30T10:39:38.455+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-30T10:39:38.456+0000] {logging_mixin.py:190} INFO - Current task name:get_aqi_data_Nonthaburi state:running start_date:2025-03-30 10:39:37.407100+00:00
+[2025-03-30T10:39:38.458+0000] {logging_mixin.py:190} INFO - Dag name:aqi_etl_pipeline and current dag run status:running
+[2025-03-30T10:39:38.458+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-30T10:39:38.927+0000] {logging_mixin.py:190} INFO - ❌ Error 400: {"status":"fail","data":{"message":"city_not_found"}}
+[2025-03-30T10:39:38.939+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-30T10:39:38.974+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-30T10:39:38.976+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=aqi_etl_pipeline, task_id=get_aqi_data_Nonthaburi, run_id=manual__2025-03-30T10:39:26.348292+00:00, execution_date=20250330T103926, start_date=20250330T103937, end_date=20250330T103938
+[2025-03-30T10:39:39.014+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-30T10:39:39.014+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-30T10:39:39.014+0000] {logging_mixin.py:190} INFO - Dag name:aqi_etl_pipeline queued_at:2025-03-30 10:39:26.372196+00:00
+[2025-03-30T10:39:39.018+0000] {logging_mixin.py:190} INFO - Task hostname:58b9640d9ecf operator:PythonOperator
+[2025-03-30T10:39:39.120+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-30T10:39:39.240+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

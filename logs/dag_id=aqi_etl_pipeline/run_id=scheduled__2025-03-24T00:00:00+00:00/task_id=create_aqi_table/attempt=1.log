@@ -1,0 +1,27 @@
+[2025-03-26T14:30:57.679+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-26T14:30:57.751+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aqi_etl_pipeline.create_aqi_table scheduled__2025-03-24T00:00:00+00:00 [queued]>
+[2025-03-26T14:30:57.822+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aqi_etl_pipeline.create_aqi_table scheduled__2025-03-24T00:00:00+00:00 [queued]>
+[2025-03-26T14:30:57.824+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-03-26T14:30:58.057+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): create_aqi_table> on 2025-03-24 00:00:00+00:00
+[2025-03-26T14:30:58.254+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'aqi_etl_pipeline', 'create_aqi_table', 'scheduled__2025-03-24T00:00:00+00:00', '--job-id', '273', '--raw', '--subdir', 'DAGS_FOLDER/api_etl_pipeline.py', '--cfg-path', '/tmp/tmp1w9g0uoy']
+[2025-03-26T14:30:58.270+0000] {standard_task_runner.py:105} INFO - Job 273: Subtask create_aqi_table
+[2025-03-26T14:30:58.298+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=239) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-03-26T14:30:58.301+0000] {standard_task_runner.py:72} INFO - Started process 337 to run task
+[2025-03-26T14:30:58.664+0000] {task_command.py:467} INFO - Running <TaskInstance: aqi_etl_pipeline.create_aqi_table scheduled__2025-03-24T00:00:00+00:00 [running]> on host bc76e43d85cd
+[2025-03-26T14:30:59.400+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='aqi_etl_pipeline' AIRFLOW_CTX_TASK_ID='create_aqi_table' AIRFLOW_CTX_EXECUTION_DATE='2025-03-24T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-24T00:00:00+00:00'
+[2025-03-26T14:30:59.403+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-26T14:30:59.405+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-26T14:30:59.406+0000] {logging_mixin.py:190} INFO - Current task name:create_aqi_table state:running start_date:2025-03-26 14:30:57.759787+00:00
+[2025-03-26T14:30:59.406+0000] {logging_mixin.py:190} INFO - Dag name:aqi_etl_pipeline and current dag run status:running
+[2025-03-26T14:30:59.407+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-26T14:30:59.464+0000] {base.py:84} INFO - Retrieving connection '***_default'
+[2025-03-26T14:30:59.507+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-26T14:30:59.587+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-26T14:30:59.588+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=aqi_etl_pipeline, task_id=create_aqi_table, run_id=scheduled__2025-03-24T00:00:00+00:00, execution_date=20250324T000000, start_date=20250326T143057, end_date=20250326T143059
+[2025-03-26T14:30:59.672+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-26T14:30:59.674+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-26T14:30:59.677+0000] {logging_mixin.py:190} INFO - Dag name:aqi_etl_pipeline queued_at:2025-03-26 14:30:39.203195+00:00
+[2025-03-26T14:30:59.678+0000] {logging_mixin.py:190} INFO - Task hostname:bc76e43d85cd operator:PythonOperator
+[2025-03-26T14:30:59.767+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-26T14:30:59.872+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-26T14:30:59.875+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

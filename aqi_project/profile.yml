@@ -1,0 +1,13 @@
+my_profile:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgres
+      user: airflow
+      password: airflow
+      port: 5432
+      dbname: airflow
+      schema: public  # หรือ schema ที่คุณต้องการใน PostgreSQL
+      threads: 4
+      keepalives_idle: 300

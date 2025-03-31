@@ -292,6 +292,7 @@ services:
 
   db:
     image: postgres
+    container_name: aqi_postgres
     restart: always
     volumes:
       - weather-db-volume:/var/lib/postgresql/data

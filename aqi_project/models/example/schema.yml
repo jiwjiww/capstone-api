@@ -1,0 +1,40 @@
+version: 2
+
+sources:
+  - name: aqi_project
+    schema: public  # หรือ schema อื่นที่ใช้
+    tables:
+      - name: aqi_data
+
+models:
+  - name: highest_aqi_week
+    description: "ค่าฝุ่น AQI สูงสุดของสัปดาห์นี้"
+    columns:
+      - name: highest_aqi
+        description: "ค่าฝุ่น AQI สูงสุดใน 7 วันที่ผ่านมา"
+
+  - name: lowest_aqi_3months
+    description: "ค่าฝุ่น AQI ต่ำสุดในช่วง 3 เดือนที่ผ่านมา"
+    columns:
+      - name: lowest_aqi
+        description: "ค่าฝุ่น AQI ต่ำสุดใน 3 เดือนที่ผ่านมา"
+
+  - name: avg_aqi_week
+    description: "ค่าเฉลี่ย AQI ของสัปดาห์นี้"
+    columns:
+      - name: avg_aqi
+        description: "ค่า AQI เฉลี่ยใน 7 วันที่ผ่านมา"
+
+  - name: days_high_aqi_month
+    description: "นับจำนวนวันที่ AQI เกิน 100 ในเดือนนี้"
+    columns:
+      - name: days_high_aqi
+        description: "จำนวนวันในเดือนนี้ที่ AQI เกิน 100"
+
+  - name: daily_avg_aqi_week
+    description: "ค่า AQI ของแต่ละวันในสัปดาห์นี้"
+    columns:
+      - name: date
+        description: "วันที่ในสัปดาห์นี้"
+      - name: avg_aqi
+        description: "ค่า AQI เฉลี่ยต่อวัน"

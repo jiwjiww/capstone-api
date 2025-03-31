@@ -1,0 +1,33 @@
+{
+    "status": "success",
+    "data": {
+        "city": "Nakhon Pathom",
+        "state": "Nakhon Pathom",
+        "country": "Thailand",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                100.32622308,
+                13.79059242
+            ]
+        },
+        "current": {
+            "pollution": {
+                "ts": "2025-03-31T15:00:00.000Z",
+                "aqius": 153,
+                "mainus": "p2",
+                "aqicn": 79,
+                "maincn": "p2"
+            },
+            "weather": {
+                "ts": "2025-03-31T15:00:00.000Z",
+                "tp": 30,
+                "pr": 1011,
+                "hu": 66,
+                "ws": 3.04,
+                "wd": 175,
+                "ic": "04n"
+            }
+        }
+    }
+}

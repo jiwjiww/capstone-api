@@ -1,172 +1,149 @@
 import json
+import logging
 import requests
-import certifi
-
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from airflow import DAG
 from airflow.models import Variable
-from airflow.operators.bash import BashOperator
-from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
+from airflow.operators.empty import EmptyOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
-from airflow.utils import timezone
-from datetime import datetime
+from airflow.utils.task_group import TaskGroup
+from airflow.utils.dates import days_ago
+from datetime import timedelta
 
 DAG_FOLDER = "/opt/airflow/dags"
-
-# URL ของ API
 API_URL = "https://api.airvisual.com/v2/city"
+API_KEY = Variable.get("airvisual_api_key", default_var=None)
 
-# ดึง API Key จาก Airflow Variables
-API_KEY = Variable.get("airvisual_api_key")
+if not API_KEY:
+    raise ValueError("API key is missing. Set 'airvisual_api_key' in Airflow Variables.")
 
-# พารามิเตอร์สำหรับ API Request
-PAYLOAD = {
-    "city": "Bangkok",
-    "state": "Bangkok",
-    "country": "Thailand",
-    "key": API_KEY
-}
+def _get_aqi_data(city, state, country, **kwargs):
+    session = requests.Session()
+    retries = Retry(total=3, backoff_factor=2, status_forcelist=[500, 502, 503, 504])
+    session.mount("https://", HTTPAdapter(max_retries=retries))
+    
+    payload = {"city": city, "state": state, "country": country, "key": API_KEY}
+    logging.info(f"Fetching AQI data with params: {payload}")
+    response = session.get(API_URL, params=payload, timeout=10)
+    
+    try:
+        data = response.json()
+    except json.JSONDecodeError:
+        raise ValueError(f"Invalid JSON response from API: {response.text}")
+    
+    if response.status_code == 200 and data.get("status") == "success":
+        file_path = f"{DAG_FOLDER}/aqi_data_{city.replace(' ', '_')}.json"
+        with open(file_path, "w") as f:
+            json.dump(data, f, indent=4)
+    else:
+        raise ValueError(f"API Error {response.status_code}: {data.get('data', {}).get('message', 'Unknown error')}")
 
-
-def _get_aqi_data():
-    response = requests.get(API_URL, params=PAYLOAD, verify=certifi.where())
-    print(f"API URL: {response.url}")  # ดู URL ที่ใช้ request
-    print(f"Response Status Code: {response.status_code}")  # ดู status code
-    print(f"Response Text: {response.text}")  # ดูข้อมูลดิบที่ API ส่งมา
-
-    data = response.json()
-    print(f"Parsed JSON: {json.dumps(data, indent=2)}")  # ดูข้อมูลแบบ JSON
-
-    with open(f"{DAG_FOLDER}/aqi_data.json", "w") as f:
-        json.dump(data, f)
-
-
-import logging
-
-def _validate_aqi_data():
-    with open(f"{DAG_FOLDER}/aqi_data.json", "r") as f:
-        data = json.load(f)
-
-    logging.info(f"Received data: {json.dumps(data, indent=2)}")
-
-    # ตรวจสอบว่ามี key "data" หรือไม่
-    if "data" not in data:
-        raise ValueError("Missing 'data' key in response. Check API response.")
-
-    # ตรวจสอบว่ามี key "current" หรือไม่
-    if "current" not in data["data"]:
-        raise ValueError("Missing 'current' key in response data.")
-
-    # ตรวจสอบว่ามี key "pollution" หรือไม่
-    if "pollution" not in data["data"]["current"]:
-        raise ValueError("Missing 'pollution' key in response data.")
-
-    logging.info("AQI data validation passed.")
-
-
+def _validate_aqi_data(city, **kwargs):
+    file_path = f"{DAG_FOLDER}/aqi_data_{city.replace(' ', '_')}.json"
+    try:
+        with open(file_path, "r") as f:
+            data = json.load(f)
+        if data.get("status") != "success" or "data" not in data:
+            raise ValueError(f"Invalid data for {city}: {data}")
+    except Exception as e:
+        raise ValueError(f"Error validating data for {city}: {str(e)}")
 
 def _create_aqi_table():
-    # สร้างตารางใน PostgreSQL ถ้ายังไม่มี
-    pg_hook = PostgresHook(
-        postgres_conn_id="postgres_default",
-        schema="aqi_project"
-    )
+    pg_hook = PostgresHook(postgres_conn_id="postgres_default", schema="aqi_project")
     connection = pg_hook.get_conn()
     cursor = connection.cursor()
-
-    # สร้างตาราง aqi_data
-    sql_aqi_data = """
+    cursor.execute("CREATE SCHEMA IF NOT EXISTS aqi_project;")
+    cursor.execute("SET search_path TO aqi_project;")
+    cursor.execute("""
         CREATE TABLE IF NOT EXISTS aqi_data (
             id SERIAL PRIMARY KEY,
             city TEXT NOT NULL,
-            aqi_value INTEGER NOT NULL,
+            aqi_value INTEGER,
             timestamp TIMESTAMP NOT NULL
         );
-    """
-    cursor.execute(sql_aqi_data)
-
-    # สร้างตาราง location
-    sql_location = """
-        CREATE TABLE IF NOT EXISTS location (
-            city TEXT PRIMARY KEY,
-            Country TEXT NOT NULL
-        );
-    """
-    cursor.execute(sql_location)
+    """)
     connection.commit()
+    cursor.close()
+    connection.close()
 
-
-def _load_aqi_to_postgres():
-    # โหลดข้อมูล AQI ลง PostgreSQL
-    pg_hook = PostgresHook(
-        postgres_conn_id="postgres_default",
-        schema="aqi_project"
-    )
+def _load_aqi_to_postgres(city, **kwargs):
+    pg_hook = PostgresHook(postgres_conn_id="postgres_default", schema="aqi_project")
     connection = pg_hook.get_conn()
     cursor = connection.cursor()
-
-    with open(f"{DAG_FOLDER}/aqi_data.json", "r") as f:
-        data = json.load(f)
-
-    city = "Bangkok"
-    aqi_value = data["data"]["current"]["pollution"]["aqius"]
-    timestamp = data["data"]["current"]["pollution"]["ts"]
-
-    sql = """
-        INSERT INTO aqi_data (city, aqi_value, timestamp) 
-        VALUES (%s, %s, %s);
-    """
-    cursor.execute(sql, (city, aqi_value, timestamp))
-    connection.commit()
+    
+    file_path = f"{DAG_FOLDER}/aqi_data_{city.replace(' ', '_')}.json"
+    try:
+        with open(file_path, "r") as f:
+            data = json.load(f)
+        aqi_value = data["data"]["current"]["pollution"].get("aqius", None)
+        timestamp = data["data"]["current"]["pollution"].get("ts", None)
+        if aqi_value is None or timestamp is None:
+            raise ValueError(f"Missing AQI data for {city}: {data}")
+        sql = "INSERT INTO aqi_data (city, aqi_value, timestamp) VALUES (%s, %s, %s);"
+        cursor.execute(sql, (city, aqi_value, timestamp))
+        connection.commit()
+    except Exception as e:
+        raise ValueError(f"Error inserting data for {city}: {e}")
+    finally:
+        cursor.close()
+        connection.close()
 
 with DAG(
-    dag_id="test_postgres_connection",
-    schedule_interval=None,
-    start_date=datetime(2024, 1, 1),
+    dag_id="aqi_etl_pipeline",
+    schedule_interval="0 0 * * *",
+    start_date=days_ago(1),
     catchup=False,
-) as dag:
-
-    check_db = BashOperator(
-        task_id="check_postgres_db",
-        bash_command="PGPASSWORD='postgres' psql -U postgres -h db -p 5432 -d postgres -c '\l'"
-    )
-
-    check_db
-
-
-# สร้าง DAG สำหรับดึงและโหลด AQI Data
-with DAG(
-    "aqi_etl_pipeline",
-    schedule="0 0 * * *",  # รันทุกวันเวลาเที่ยงคืน
-    start_date=timezone.datetime(2025, 2, 1),
+    concurrency=5,
+    max_active_runs=1,
     tags=["capstone", "aqi"],
 ) as dag:
-
     start = EmptyOperator(task_id="start")
-
-    get_aqi_data = PythonOperator(
-        task_id="get_aqi_data",
-        python_callable=_get_aqi_data,
-    )
-
-    validate_aqi_data = PythonOperator(
-        task_id="validate_aqi_data",
-        python_callable=_validate_aqi_data,
-    )
-
-    create_aqi_table = PythonOperator(
-        task_id="create_aqi_table",
-        python_callable=_create_aqi_table,
-    )
-
-    load_aqi_to_postgres = PythonOperator(
-        task_id="load_aqi_to_postgres",
-        python_callable=_load_aqi_to_postgres,
-    )
-
     end = EmptyOperator(task_id="end")
 
-    # Workflow Execution
-    start >> get_aqi_data >> validate_aqi_data >> load_aqi_to_postgres >> end
-    start >> create_aqi_table >> load_aqi_to_postgres
+    create_aqi_table_task = PythonOperator(
+        task_id="create_aqi_table",
+        python_callable=_create_aqi_table,
+        retries=3,
+        retry_delay=timedelta(minutes=5)
+    )
 
+    cities = [
+        {"city": "Bangkok", "state": "Bangkok", "country": "Thailand"},
+        {"city": "Nakhon Pathom", "state": "Nakhon Pathom", "country": "Thailand"},
+        {"city": "Pathum Thani", "state": "Pathum Thani", "country": "Thailand"}
+    ]
+
+    with TaskGroup("aqi_tasks_group") as aqi_tasks_group:
+        for city_info in cities:
+            city_name = city_info["city"]
+            city_normalized = city_name.replace(" ", "_")
+
+            get_aqi_data_task = PythonOperator(
+                task_id=f"get_aqi_data_{city_normalized}",
+                python_callable=_get_aqi_data,
+                op_args=[city_info["city"], city_info["state"], city_info["country"]],
+                retries=3,
+                retry_delay=timedelta(minutes=3)
+            )
+
+            validate_aqi_data_task = PythonOperator(
+                task_id=f"validate_aqi_data_{city_normalized}",
+                python_callable=_validate_aqi_data,
+                op_args=[city_name],
+                retries=3,
+                retry_delay=timedelta(minutes=3)
+            )
+
+            load_aqi_to_postgres_task = PythonOperator(
+                task_id=f"load_aqi_to_postgres_{city_normalized}",
+                python_callable=_load_aqi_to_postgres,
+                op_args=[city_name],
+                retries=3,
+                retry_delay=timedelta(minutes=3)
+            )
+
+            get_aqi_data_task >> validate_aqi_data_task >> load_aqi_to_postgres_task
+
+    start >> create_aqi_table_task >> aqi_tasks_group >> end

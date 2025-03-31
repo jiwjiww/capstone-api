@@ -1,0 +1,27 @@
+[2025-03-31T07:20:08.660+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-31T07:20:08.761+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aqi_etl_pipeline.aqi_tasks_group.load_aqi_to_postgres_Pathum_Thani scheduled__2025-03-30T00:00:00+00:00 [queued]>
+[2025-03-31T07:20:08.816+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aqi_etl_pipeline.aqi_tasks_group.load_aqi_to_postgres_Pathum_Thani scheduled__2025-03-30T00:00:00+00:00 [queued]>
+[2025-03-31T07:20:08.818+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2025-03-31T07:20:08.875+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): aqi_tasks_group.load_aqi_to_postgres_Pathum_Thani> on 2025-03-30 00:00:00+00:00
+[2025-03-31T07:20:08.906+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'aqi_etl_pipeline', 'aqi_tasks_group.load_aqi_to_postgres_Pathum_Thani', 'scheduled__2025-03-30T00:00:00+00:00', '--job-id', '928', '--raw', '--subdir', 'DAGS_FOLDER/api_etl_pipeline.py', '--cfg-path', '/tmp/tmp8pw36dfb']
+[2025-03-31T07:20:08.911+0000] {standard_task_runner.py:105} INFO - Job 928: Subtask aqi_tasks_group.load_aqi_to_postgres_Pathum_Thani
+[2025-03-31T07:20:08.930+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1857) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-03-31T07:20:08.933+0000] {standard_task_runner.py:72} INFO - Started process 1909 to run task
+[2025-03-31T07:20:09.058+0000] {task_command.py:467} INFO - Running <TaskInstance: aqi_etl_pipeline.aqi_tasks_group.load_aqi_to_postgres_Pathum_Thani scheduled__2025-03-30T00:00:00+00:00 [running]> on host 0c0dca5804dc
+[2025-03-31T07:20:09.434+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='aqi_etl_pipeline' AIRFLOW_CTX_TASK_ID='aqi_tasks_group.load_aqi_to_postgres_Pathum_Thani' AIRFLOW_CTX_EXECUTION_DATE='2025-03-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-30T00:00:00+00:00'
+[2025-03-31T07:20:09.449+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-31T07:20:09.451+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-31T07:20:09.452+0000] {logging_mixin.py:190} INFO - Current task name:aqi_tasks_group.load_aqi_to_postgres_Pathum_Thani state:running start_date:2025-03-31 07:20:08.762643+00:00
+[2025-03-31T07:20:09.453+0000] {logging_mixin.py:190} INFO - Dag name:aqi_etl_pipeline and current dag run status:running
+[2025-03-31T07:20:09.455+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-31T07:20:09.489+0000] {base.py:84} INFO - Retrieving connection '***_default'
+[2025-03-31T07:20:09.555+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-31T07:20:09.581+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-31T07:20:09.583+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=aqi_etl_pipeline, task_id=aqi_tasks_group.load_aqi_to_***_Pathum_Thani, run_id=scheduled__2025-03-30T00:00:00+00:00, execution_date=20250330T000000, start_date=20250331T072008, end_date=20250331T072009
+[2025-03-31T07:20:09.611+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-31T07:20:09.611+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-31T07:20:09.613+0000] {logging_mixin.py:190} INFO - Dag name:aqi_etl_pipeline queued_at:2025-03-31 07:19:53.335868+00:00
+[2025-03-31T07:20:09.614+0000] {logging_mixin.py:190} INFO - Task hostname:0c0dca5804dc operator:PythonOperator
+[2025-03-31T07:20:09.651+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-31T07:20:09.740+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-31T07:20:09.746+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

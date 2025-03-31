@@ -1,0 +1,33 @@
+{
+    "status": "success",
+    "data": {
+        "city": "Pathum Thani",
+        "state": "Pathum Thani",
+        "country": "Thailand",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                100.53049,
+                14.01346
+            ]
+        },
+        "current": {
+            "pollution": {
+                "ts": "2025-03-31T15:00:00.000Z",
+                "aqius": 88,
+                "mainus": "p2",
+                "aqicn": 41,
+                "maincn": "p2"
+            },
+            "weather": {
+                "ts": "2025-03-31T15:00:00.000Z",
+                "tp": 32,
+                "pr": 1011,
+                "hu": 56,
+                "ws": 2.44,
+                "wd": 161,
+                "ic": "04n"
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "status": "success",
+    "data": {
+        "city": "Bangkok",
+        "state": "Bangkok",
+        "country": "Thailand",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                100.4888394,
+                13.7292915
+            ]
+        },
+        "current": {
+            "pollution": {
+                "ts": "2025-03-31T15:00:00.000Z",
+                "aqius": 60,
+                "mainus": "p2",
+                "aqicn": 51,
+                "maincn": "p1"
+            },
+            "weather": {
+                "ts": "2025-03-31T15:00:00.000Z",
+                "tp": 31,
+                "pr": 1011,
+                "hu": 62,
+                "ws": 3.39,
+                "wd": 179,
+                "ic": "04n"
+            }
+        }
+    }
+}

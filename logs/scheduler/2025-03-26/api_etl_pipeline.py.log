@@ -1,0 +1,713 @@
+[2025-03-26T14:30:37.838+0000] {processor.py:186} INFO - Started process (PID=193) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:30:37.839+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:30:37.845+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:30:37.845+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:30:37.921+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:30:38.181+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:30:38.180+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:30:38.366+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:30:38.363+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-24 00:00:00+00:00, run_after=2025-03-25 00:00:00+00:00
+[2025-03-26T14:30:38.379+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:30:38.379+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:30:38.462+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.636 seconds
+[2025-03-26T14:31:17.407+0000] {processor.py:186} INFO - Started process (PID=532) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:31:17.407+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:31:17.409+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:31:17.409+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:31:17.427+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:31:17.438+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:31:17.438+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:31:17.457+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:31:17.456+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:31:17.459+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:31:17.459+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:31:17.470+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.068 seconds
+[2025-03-26T14:31:47.865+0000] {processor.py:186} INFO - Started process (PID=788) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:31:47.866+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:31:47.870+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:31:47.869+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:31:47.908+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:31:47.925+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:31:47.925+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:31:47.955+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:31:47.955+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:31:47.959+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:31:47.959+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:31:47.973+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.125 seconds
+[2025-03-26T14:32:18.512+0000] {processor.py:186} INFO - Started process (PID=1084) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:32:18.513+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:32:18.519+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:32:18.518+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:32:18.550+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:32:18.567+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:32:18.567+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:32:18.604+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:32:18.604+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:32:18.609+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:32:18.609+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:32:18.624+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.123 seconds
+[2025-03-26T14:32:49.393+0000] {processor.py:186} INFO - Started process (PID=1375) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:32:49.394+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:32:49.396+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:32:49.396+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:32:49.426+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:32:49.454+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:32:49.454+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:32:49.506+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:32:49.502+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:32:49.515+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:32:49.515+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:32:49.543+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.159 seconds
+[2025-03-26T14:33:20.072+0000] {processor.py:186} INFO - Started process (PID=1671) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:33:20.074+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:33:20.079+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:33:20.078+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:33:20.110+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:33:20.131+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:33:20.130+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:33:20.159+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:33:20.159+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:33:20.163+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:33:20.163+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:33:20.177+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.111 seconds
+[2025-03-26T14:33:50.536+0000] {processor.py:186} INFO - Started process (PID=1967) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:33:50.537+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:33:50.540+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:33:50.539+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:33:50.566+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:33:50.583+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:33:50.583+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:33:50.612+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:33:50.612+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:33:50.618+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:33:50.618+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:33:50.632+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.102 seconds
+[2025-03-26T14:34:20.676+0000] {processor.py:186} INFO - Started process (PID=2263) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:34:20.677+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:34:20.679+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:34:20.679+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:34:20.705+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:34:20.727+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:34:20.725+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:34:20.759+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:34:20.758+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:34:20.763+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:34:20.763+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:34:20.778+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.108 seconds
+[2025-03-26T14:34:51.387+0000] {processor.py:186} INFO - Started process (PID=2559) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:34:51.387+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:34:51.389+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:34:51.389+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:34:51.418+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:34:51.435+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:34:51.435+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:34:51.462+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:34:51.462+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:34:51.468+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:34:51.468+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:34:51.482+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.102 seconds
+[2025-03-26T14:35:21.811+0000] {processor.py:186} INFO - Started process (PID=2855) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:35:21.812+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:35:21.814+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:35:21.814+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:35:21.842+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:35:21.859+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:35:21.859+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:35:21.894+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:35:21.894+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:35:21.900+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:35:21.900+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:35:21.917+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.112 seconds
+[2025-03-26T14:35:52.082+0000] {processor.py:186} INFO - Started process (PID=3151) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:35:52.083+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:35:52.085+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:35:52.085+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:35:52.114+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:35:52.130+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:35:52.130+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:35:52.158+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:35:52.158+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:35:52.164+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:35:52.163+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:35:52.180+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.107 seconds
+[2025-03-26T14:36:22.268+0000] {processor.py:186} INFO - Started process (PID=3447) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:36:22.269+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:36:22.271+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:36:22.271+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:36:22.314+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:36:22.341+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:36:22.341+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:36:22.397+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:36:22.397+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:36:22.406+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:36:22.406+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:36:22.450+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.188 seconds
+[2025-03-26T14:36:53.139+0000] {processor.py:186} INFO - Started process (PID=3743) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:36:53.140+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:36:53.142+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:36:53.142+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:36:53.172+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:36:53.221+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:36:53.220+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:36:53.253+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:36:53.253+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:36:53.257+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:36:53.257+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:36:53.275+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.141 seconds
+[2025-03-26T14:37:23.570+0000] {processor.py:186} INFO - Started process (PID=4039) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:37:23.572+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:37:23.579+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:37:23.578+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:37:23.613+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:37:23.649+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:37:23.648+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:37:23.706+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:37:23.706+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:37:23.711+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:37:23.710+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:37:23.747+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.190 seconds
+[2025-03-26T14:37:54.038+0000] {processor.py:186} INFO - Started process (PID=4325) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:37:54.039+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:37:54.041+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:37:54.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:37:54.067+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:37:54.083+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:37:54.082+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:37:54.110+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:37:54.109+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:37:54.114+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:37:54.114+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:37:54.134+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.102 seconds
+[2025-03-26T14:38:24.335+0000] {processor.py:186} INFO - Started process (PID=4621) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:38:24.336+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:38:24.339+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:38:24.338+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:38:24.366+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:38:24.383+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:38:24.383+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:38:24.410+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:38:24.409+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:38:24.414+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:38:24.414+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:38:24.431+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.101 seconds
+[2025-03-26T14:38:54.515+0000] {processor.py:186} INFO - Started process (PID=4917) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:38:54.516+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:38:54.518+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:38:54.518+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:38:54.543+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:38:54.561+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:38:54.561+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:38:54.593+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:38:54.593+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:38:54.597+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:38:54.597+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:38:54.610+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.101 seconds
+[2025-03-26T14:39:24.835+0000] {processor.py:186} INFO - Started process (PID=5213) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:39:24.839+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:39:24.845+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:39:24.845+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:39:24.879+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:39:24.895+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:39:24.895+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:39:24.932+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:39:24.932+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:39:24.940+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:39:24.940+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:39:24.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.151 seconds
+[2025-03-26T14:39:55.047+0000] {processor.py:186} INFO - Started process (PID=5509) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:39:55.048+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:39:55.050+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:39:55.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:39:55.075+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:39:55.093+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:39:55.093+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:39:55.123+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:39:55.123+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:39:55.128+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:39:55.128+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:39:55.142+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.101 seconds
+[2025-03-26T14:40:25.292+0000] {processor.py:186} INFO - Started process (PID=5805) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:40:25.293+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:40:25.295+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:40:25.295+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:40:25.324+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:40:25.341+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:40:25.341+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:40:25.368+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:40:25.368+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:40:25.373+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:40:25.373+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:40:25.389+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.102 seconds
+[2025-03-26T14:40:55.706+0000] {processor.py:186} INFO - Started process (PID=6101) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:40:55.707+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:40:55.709+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:40:55.709+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:40:55.734+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:40:55.749+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:40:55.749+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:40:55.776+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:40:55.776+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:40:55.780+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:40:55.780+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:40:55.795+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.095 seconds
+[2025-03-26T14:41:26.101+0000] {processor.py:186} INFO - Started process (PID=6397) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:41:26.102+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:41:26.105+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:41:26.104+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:41:26.129+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:41:26.145+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:41:26.145+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:41:26.178+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:41:26.177+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:41:26.182+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:41:26.182+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:41:26.205+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.114 seconds
+[2025-03-26T14:41:56.304+0000] {processor.py:186} INFO - Started process (PID=6705) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:41:56.304+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:41:56.307+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:41:56.306+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:41:56.333+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:41:56.350+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:41:56.349+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:41:56.378+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:41:56.378+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:41:56.383+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:41:56.383+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:41:56.398+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.100 seconds
+[2025-03-26T14:42:26.464+0000] {processor.py:186} INFO - Started process (PID=7001) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:42:26.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:42:26.467+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:42:26.466+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:42:26.491+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:42:26.508+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:42:26.508+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:42:26.535+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:42:26.535+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:42:26.539+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:42:26.539+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:42:26.554+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.095 seconds
+[2025-03-26T14:42:56.696+0000] {processor.py:186} INFO - Started process (PID=7297) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:42:56.697+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:42:56.699+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:42:56.699+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:42:56.724+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:42:56.740+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:42:56.740+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:42:56.773+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:42:56.773+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:42:56.777+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:42:56.777+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:42:56.790+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.102 seconds
+[2025-03-26T14:43:27.008+0000] {processor.py:186} INFO - Started process (PID=7593) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:43:27.010+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:43:27.012+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:43:27.012+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:43:27.041+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:43:27.064+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:43:27.064+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:43:27.095+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:43:27.094+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:43:27.099+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:43:27.099+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:43:27.123+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.129 seconds
+[2025-03-26T14:43:57.466+0000] {processor.py:186} INFO - Started process (PID=7888) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:43:57.467+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:43:57.469+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:43:57.469+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:43:57.507+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:43:57.543+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:43:57.542+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:43:57.575+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:43:57.575+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:43:57.579+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:43:57.579+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:43:57.595+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.135 seconds
+[2025-03-26T14:44:28.115+0000] {processor.py:186} INFO - Started process (PID=8184) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:44:28.116+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:44:28.118+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:44:28.118+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:44:28.144+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:44:28.160+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:44:28.160+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:44:28.188+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:44:28.187+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:44:28.192+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:44:28.192+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:44:28.206+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.097 seconds
+[2025-03-26T14:44:58.725+0000] {processor.py:186} INFO - Started process (PID=8480) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:44:58.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:44:58.728+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:44:58.728+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:44:58.753+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:44:58.769+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:44:58.769+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:44:58.797+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:44:58.796+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:44:58.801+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:44:58.801+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:44:58.814+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.095 seconds
+[2025-03-26T14:45:29.614+0000] {processor.py:186} INFO - Started process (PID=8771) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:45:29.615+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:45:29.617+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:45:29.617+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:45:29.643+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:45:29.660+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:45:29.660+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:45:29.688+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:45:29.688+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:45:29.694+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:45:29.693+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:45:29.707+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.098 seconds
+[2025-03-26T14:45:59.833+0000] {processor.py:186} INFO - Started process (PID=9067) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:45:59.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:45:59.837+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:45:59.836+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:45:59.863+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:45:59.879+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:45:59.879+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:45:59.908+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:45:59.907+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:45:59.917+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:45:59.917+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:45:59.948+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.120 seconds
+[2025-03-26T14:46:30.607+0000] {processor.py:186} INFO - Started process (PID=9363) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:46:30.608+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:46:30.610+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:46:30.610+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:46:30.636+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:46:30.656+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:46:30.656+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:46:30.690+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:46:30.690+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:46:30.694+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:46:30.694+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:46:30.708+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.107 seconds
+[2025-03-26T14:47:01.352+0000] {processor.py:186} INFO - Started process (PID=9659) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:47:01.355+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:47:01.365+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:47:01.364+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:47:01.442+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:47:01.474+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:47:01.474+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:47:01.505+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:47:01.505+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:47:01.509+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:47:01.509+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:47:01.523+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.192 seconds
+[2025-03-26T14:47:31.661+0000] {processor.py:186} INFO - Started process (PID=9955) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:47:31.662+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:47:31.664+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:47:31.664+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:47:31.739+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:47:31.792+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:47:31.792+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:47:31.863+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:47:31.863+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:47:31.871+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:47:31.871+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:47:31.894+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.244 seconds
+[2025-03-26T14:48:02.344+0000] {processor.py:186} INFO - Started process (PID=10251) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:48:02.345+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:48:02.347+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:48:02.347+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:48:02.373+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:48:02.389+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:48:02.388+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:48:02.416+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:48:02.415+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:48:02.420+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:48:02.419+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:48:02.434+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.096 seconds
+[2025-03-26T14:48:33.114+0000] {processor.py:186} INFO - Started process (PID=10545) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:48:33.115+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:48:33.117+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:48:33.117+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:48:33.141+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:48:33.156+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:48:33.156+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:48:33.199+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:48:33.198+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:48:33.203+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:48:33.203+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:48:33.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.109 seconds
+[2025-03-26T14:49:04.426+0000] {processor.py:186} INFO - Started process (PID=10843) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:49:04.427+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:49:04.429+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:49:04.429+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:49:04.469+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:49:04.491+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:49:04.490+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:49:04.518+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:49:04.518+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:49:04.522+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:49:04.522+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:49:04.536+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.116 seconds
+[2025-03-26T14:49:34.787+0000] {processor.py:186} INFO - Started process (PID=11119) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:49:34.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:49:34.790+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:49:34.789+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:49:34.815+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:49:34.831+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:49:34.830+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:49:34.857+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:49:34.857+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:49:34.861+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:49:34.861+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:49:34.876+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.095 seconds
+[2025-03-26T14:50:05.502+0000] {processor.py:186} INFO - Started process (PID=11415) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:50:05.502+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:50:05.505+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:50:05.504+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:50:05.531+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:50:05.558+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:50:05.558+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:50:05.586+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:50:05.585+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:50:05.590+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:50:05.590+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:50:05.605+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.108 seconds
+[2025-03-26T14:50:35.668+0000] {processor.py:186} INFO - Started process (PID=11711) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:50:35.668+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:50:35.670+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:50:35.670+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:50:35.687+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:50:35.701+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:50:35.701+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:50:35.720+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:50:35.720+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:50:35.723+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:50:35.723+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:50:35.734+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.071 seconds
+[2025-03-26T14:51:06.407+0000] {processor.py:186} INFO - Started process (PID=12007) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:51:06.408+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:51:06.410+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:51:06.410+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:51:06.435+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:51:06.451+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:51:06.451+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:51:06.480+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:51:06.479+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:51:06.484+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:51:06.484+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:51:06.498+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.096 seconds
+[2025-03-26T14:51:36.648+0000] {processor.py:186} INFO - Started process (PID=12303) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:51:36.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:51:36.651+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:51:36.651+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:51:36.676+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:51:36.694+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:51:36.694+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:51:36.722+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:51:36.721+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:51:36.726+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:51:36.726+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:51:36.740+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.098 seconds
+[2025-03-26T14:52:07.658+0000] {processor.py:186} INFO - Started process (PID=12599) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:52:07.658+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:52:07.660+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:52:07.660+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:52:07.685+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:52:07.705+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:52:07.705+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:52:07.734+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:52:07.733+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:52:07.739+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:52:07.738+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:52:07.752+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.100 seconds
+[2025-03-26T14:52:38.355+0000] {processor.py:186} INFO - Started process (PID=12895) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:52:38.356+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:52:38.358+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:52:38.357+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:52:38.383+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:52:38.403+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:52:38.402+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:52:38.433+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:52:38.432+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:52:38.437+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:52:38.437+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:52:38.451+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.101 seconds
+[2025-03-26T14:53:08.835+0000] {processor.py:186} INFO - Started process (PID=13191) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:53:08.836+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:53:08.838+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:53:08.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:53:08.863+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:53:08.879+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:53:08.879+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:53:08.922+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:53:08.922+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:53:08.930+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:53:08.929+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:53:08.945+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.115 seconds
+[2025-03-26T14:53:39.421+0000] {processor.py:186} INFO - Started process (PID=13487) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:53:39.422+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:53:39.424+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:53:39.423+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:53:39.449+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:53:39.468+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:53:39.468+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:53:39.497+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:53:39.497+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:53:39.501+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:53:39.501+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:53:39.514+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.099 seconds
+[2025-03-26T14:54:09.926+0000] {processor.py:186} INFO - Started process (PID=13782) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:54:09.927+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:54:09.929+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:54:09.929+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:54:09.954+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:54:09.971+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:54:09.970+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:54:09.999+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:54:09.999+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:54:10.004+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:54:10.004+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:54:10.018+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.098 seconds
+[2025-03-26T14:54:40.588+0000] {processor.py:186} INFO - Started process (PID=14078) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:54:40.589+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:54:40.590+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:54:40.590+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:54:40.613+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:54:40.629+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:54:40.629+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:54:40.648+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:54:40.648+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:54:40.651+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:54:40.650+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:54:40.662+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.078 seconds
+[2025-03-26T14:55:10.707+0000] {processor.py:186} INFO - Started process (PID=14339) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:55:10.708+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:55:10.710+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:55:10.710+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:55:10.735+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:55:10.751+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:55:10.751+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:55:10.977+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:55:10.977+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:55:10.981+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:55:10.981+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:55:10.993+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.292 seconds
+[2025-03-26T14:55:41.033+0000] {processor.py:186} INFO - Started process (PID=14635) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:55:41.034+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:55:41.036+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:55:41.035+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:55:41.056+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:55:41.067+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:55:41.067+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:55:41.243+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:55:41.243+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:55:41.246+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:55:41.246+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:55:41.257+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.228 seconds
+[2025-03-26T14:56:11.294+0000] {processor.py:186} INFO - Started process (PID=14931) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:56:11.294+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:56:11.298+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:56:11.298+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:56:11.328+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:56:11.347+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:56:11.347+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:56:11.383+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:56:11.383+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:56:11.567+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:56:11.566+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:56:11.578+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.290 seconds
+[2025-03-26T14:56:41.622+0000] {processor.py:186} INFO - Started process (PID=15227) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:56:41.623+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:56:41.625+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:56:41.624+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:56:41.645+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:56:41.656+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:56:41.655+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:56:41.674+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:56:41.674+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:56:41.677+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:56:41.677+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:56:41.689+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.073 seconds
+[2025-03-26T14:57:11.768+0000] {processor.py:186} INFO - Started process (PID=15523) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:57:11.769+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:57:11.771+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:57:11.770+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:57:11.789+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:57:11.799+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:57:11.799+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:57:11.819+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:57:11.819+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:57:11.822+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:57:11.822+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:57:11.833+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.069 seconds
+[2025-03-26T14:57:42.440+0000] {processor.py:186} INFO - Started process (PID=15819) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:57:42.441+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:57:42.442+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:57:42.442+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:57:42.460+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:57:42.471+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:57:42.471+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:57:42.492+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:57:42.492+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:57:42.495+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:57:42.495+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:57:42.506+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.071 seconds
+[2025-03-26T14:58:12.756+0000] {processor.py:186} INFO - Started process (PID=16115) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:58:12.756+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:58:12.758+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:58:12.758+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:58:12.776+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:58:12.786+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:58:12.786+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:58:12.805+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:58:12.804+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:58:12.807+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:58:12.807+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:58:12.818+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.068 seconds
+[2025-03-26T14:58:43.372+0000] {processor.py:186} INFO - Started process (PID=16417) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:58:43.375+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:58:43.377+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:58:43.376+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:58:43.394+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:58:43.405+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:58:43.405+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:58:43.424+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:58:43.424+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:58:43.427+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:58:43.427+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:58:43.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.078 seconds
+[2025-03-26T14:59:13.682+0000] {processor.py:186} INFO - Started process (PID=16713) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:59:13.683+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:59:13.684+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:59:13.684+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:59:13.702+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:59:13.713+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:59:13.713+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:59:13.734+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:59:13.734+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:59:13.737+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:59:13.737+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:59:13.749+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.072 seconds
+[2025-03-26T14:59:43.871+0000] {processor.py:186} INFO - Started process (PID=17009) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:59:43.872+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T14:59:43.873+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:59:43.873+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:59:43.891+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T14:59:43.902+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:59:43.902+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T14:59:43.922+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:59:43.922+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T14:59:43.925+0000] {logging_mixin.py:190} INFO - [2025-03-26T14:59:43.925+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T14:59:43.936+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.070 seconds
+[2025-03-26T15:00:14.290+0000] {processor.py:186} INFO - Started process (PID=17305) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:00:14.291+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:00:14.293+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:00:14.292+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:00:14.311+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:00:14.321+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:00:14.321+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:00:14.340+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:00:14.340+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:00:14.343+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:00:14.343+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:00:14.354+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.069 seconds
+[2025-03-26T15:00:44.395+0000] {processor.py:186} INFO - Started process (PID=17601) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:00:44.396+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:00:44.398+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:00:44.398+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:00:44.416+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:00:44.430+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:00:44.430+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:00:44.449+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:00:44.449+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:00:44.452+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:00:44.452+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:00:44.463+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.073 seconds
+[2025-03-26T15:01:14.973+0000] {processor.py:186} INFO - Started process (PID=17897) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:01:14.974+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:01:14.976+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:01:14.975+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:01:14.996+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:01:15.007+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:01:15.007+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:01:15.026+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:01:15.026+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:01:15.029+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:01:15.029+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:01:15.041+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.072 seconds
+[2025-03-26T15:01:45.082+0000] {processor.py:186} INFO - Started process (PID=18193) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:01:45.083+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:01:45.084+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:01:45.084+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:01:45.102+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:01:45.114+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:01:45.113+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:01:45.134+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:01:45.134+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:01:45.138+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:01:45.138+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:01:45.158+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.080 seconds
+[2025-03-26T15:02:15.533+0000] {processor.py:186} INFO - Started process (PID=18489) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:02:15.533+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:02:15.535+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:02:15.535+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:02:15.553+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:02:15.564+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:02:15.564+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:02:15.583+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:02:15.583+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:02:15.586+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:02:15.586+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:02:15.598+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.071 seconds
+[2025-03-26T15:02:45.824+0000] {processor.py:186} INFO - Started process (PID=18784) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:02:45.825+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:02:45.827+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:02:45.826+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:02:45.849+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:02:45.861+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:02:45.861+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:02:45.886+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:02:45.886+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:02:45.889+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:02:45.889+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:02:45.900+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.081 seconds
+[2025-03-26T15:03:16.108+0000] {processor.py:186} INFO - Started process (PID=19080) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:03:16.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:03:16.110+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:03:16.110+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:03:16.129+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:03:16.140+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:03:16.140+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:03:16.159+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:03:16.159+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:03:16.161+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:03:16.161+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:03:16.173+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.069 seconds
+[2025-03-26T15:03:46.375+0000] {processor.py:186} INFO - Started process (PID=19376) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:03:46.376+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:03:46.378+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:03:46.378+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:03:46.396+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:03:46.407+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:03:46.407+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:03:46.426+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:03:46.425+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:03:46.428+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:03:46.428+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:03:46.440+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.070 seconds
+[2025-03-26T15:04:16.982+0000] {processor.py:186} INFO - Started process (PID=19672) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:04:16.982+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:04:16.984+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:04:16.984+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:04:17.002+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:04:17.014+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:04:17.014+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:04:17.032+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:04:17.032+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:04:17.035+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:04:17.035+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:04:17.046+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.069 seconds
+[2025-03-26T15:04:47.293+0000] {processor.py:186} INFO - Started process (PID=19968) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:04:47.294+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:04:47.296+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:04:47.295+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:04:47.317+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:04:47.330+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:04:47.330+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:04:47.349+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:04:47.349+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:04:47.351+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:04:47.351+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:04:47.362+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.073 seconds
+[2025-03-26T15:05:17.475+0000] {processor.py:186} INFO - Started process (PID=20264) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:05:17.477+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:05:17.480+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:05:17.479+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:05:17.508+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:05:17.530+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:05:17.529+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:05:17.564+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:05:17.564+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:05:17.569+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:05:17.568+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:05:17.587+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.125 seconds
+[2025-03-26T15:05:48.659+0000] {processor.py:186} INFO - Started process (PID=20540) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:05:48.660+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:05:48.663+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:05:48.662+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:05:48.688+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:05:48.706+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:05:48.706+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:05:48.734+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:05:48.734+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:05:48.738+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:05:48.738+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:05:48.753+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.100 seconds
+[2025-03-26T15:06:19.539+0000] {processor.py:186} INFO - Started process (PID=20809) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:06:19.540+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:06:19.542+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:06:19.541+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:06:19.566+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:06:19.582+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:06:19.582+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:06:19.610+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:06:19.610+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:06:19.614+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:06:19.613+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:06:19.630+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.099 seconds
+[2025-03-26T15:06:50.032+0000] {processor.py:186} INFO - Started process (PID=21080) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:06:50.034+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:06:50.036+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:06:50.036+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:06:50.062+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:06:50.080+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:06:50.079+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:06:50.107+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:06:50.107+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:06:50.112+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:06:50.112+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:06:50.137+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.111 seconds
+[2025-03-26T15:07:20.617+0000] {processor.py:186} INFO - Started process (PID=21373) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:07:20.619+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:07:20.624+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:07:20.624+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:07:20.660+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:07:20.677+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:07:20.677+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:07:20.715+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:07:20.714+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:07:20.718+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:07:20.718+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:07:20.732+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.139 seconds
+[2025-03-26T15:07:51.203+0000] {processor.py:186} INFO - Started process (PID=21664) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:07:51.210+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:07:51.214+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:07:51.214+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:07:51.434+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:07:51.477+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:07:51.477+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:07:51.513+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:07:51.513+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:07:51.518+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:07:51.518+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:07:51.533+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.346 seconds
+[2025-03-26T15:08:21.861+0000] {processor.py:186} INFO - Started process (PID=21960) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:08:21.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:08:21.864+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:08:21.863+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:08:21.888+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:08:21.904+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:08:21.904+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:08:21.936+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:08:21.936+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:08:21.945+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:08:21.944+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:08:21.987+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.132 seconds
+[2025-03-26T15:08:52.112+0000] {processor.py:186} INFO - Started process (PID=22256) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:08:52.113+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:08:52.115+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:08:52.114+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:08:52.141+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:08:52.160+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:08:52.159+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:08:52.191+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:08:52.191+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:08:52.197+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:08:52.197+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:08:52.213+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.106 seconds
+[2025-03-26T15:09:23.182+0000] {processor.py:186} INFO - Started process (PID=22552) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:09:23.183+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:09:23.186+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:09:23.185+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:09:23.211+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:09:23.228+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:09:23.228+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:09:23.256+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:09:23.256+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:09:23.261+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:09:23.261+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:09:23.275+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.098 seconds
+[2025-03-26T15:09:54.034+0000] {processor.py:186} INFO - Started process (PID=22848) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:09:54.035+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:09:54.037+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:09:54.037+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:09:54.063+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:09:54.085+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:09:54.085+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:09:54.133+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:09:54.133+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:09:54.138+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:09:54.138+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:09:54.154+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.127 seconds
+[2025-03-26T15:10:24.550+0000] {processor.py:186} INFO - Started process (PID=23144) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:10:24.551+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:10:24.553+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:10:24.553+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:10:24.578+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:10:24.595+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:10:24.594+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:10:24.628+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:10:24.627+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:10:24.632+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:10:24.632+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:10:24.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.119 seconds
+[2025-03-26T15:10:54.722+0000] {processor.py:186} INFO - Started process (PID=23440) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:10:54.723+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:10:54.725+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:10:54.725+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:10:54.750+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:10:54.782+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:10:54.782+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:10:54.812+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:10:54.811+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:10:54.816+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:10:54.816+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:10:54.830+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.114 seconds
+[2025-03-26T15:11:25.402+0000] {processor.py:186} INFO - Started process (PID=23736) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:11:25.404+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:11:25.406+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:11:25.406+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:11:25.430+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:11:25.446+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:11:25.446+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:11:25.478+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:11:25.478+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:11:25.483+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:11:25.482+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:11:25.496+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.100 seconds
+[2025-03-26T15:11:55.768+0000] {processor.py:186} INFO - Started process (PID=24032) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:11:55.769+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:11:55.772+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:11:55.771+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:11:55.797+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:11:55.814+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:11:55.814+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:11:55.843+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:11:55.842+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:11:55.847+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:11:55.847+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:11:55.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.100 seconds
+[2025-03-26T15:12:27.604+0000] {processor.py:186} INFO - Started process (PID=24328) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:12:27.605+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:12:27.607+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:12:27.607+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:12:27.626+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:12:27.654+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:12:27.653+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:12:27.690+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:12:27.690+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:12:27.694+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:12:27.694+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:12:27.710+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.110 seconds
+[2025-03-26T15:57:41.709+0000] {processor.py:186} INFO - Started process (PID=187) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:57:41.719+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:57:41.723+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:57:41.723+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:57:41.841+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:57:42.108+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:57:42.104+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:57:42.202+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:57:42.202+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:57:42.213+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:57:42.212+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:57:42.272+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.574 seconds
+[2025-03-26T15:58:12.513+0000] {processor.py:186} INFO - Started process (PID=489) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:58:12.514+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T15:58:12.517+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:58:12.516+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:58:12.558+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T15:58:12.574+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:58:12.573+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T15:58:12.606+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:58:12.606+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T15:58:12.611+0000] {logging_mixin.py:190} INFO - [2025-03-26T15:58:12.611+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T15:58:12.629+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.122 seconds
+[2025-03-26T16:35:12.066+0000] {processor.py:186} INFO - Started process (PID=188) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:35:12.070+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T16:35:12.072+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:35:12.072+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:35:12.122+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/api_etl_pipeline.py:131 SyntaxWarning: invalid escape sequence '\l'
+[2025-03-26T16:35:12.143+0000] {processor.py:925} INFO - DAG(s) 'aqi_etl_pipeline', 'test_postgres_connection' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:35:12.343+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:35:12.341+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T16:35:12.414+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:35:12.414+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T16:35:12.427+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:35:12.426+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T16:35:13.193+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 1.140 seconds
+[2025-03-26T16:35:44.314+0000] {processor.py:186} INFO - Started process (PID=495) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:35:44.315+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T16:35:44.317+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:35:44.317+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:35:44.342+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:35:44.362+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:35:44.362+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T16:35:44.391+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:35:44.391+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T16:35:44.395+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:35:44.395+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T16:35:44.410+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.102 seconds
+[2025-03-26T16:36:14.523+0000] {processor.py:186} INFO - Started process (PID=791) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:36:14.524+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T16:36:14.526+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:36:14.526+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:36:14.558+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:36:14.601+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:36:14.601+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T16:36:14.688+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:36:14.688+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T16:36:14.701+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:36:14.699+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T16:36:14.748+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.232 seconds
+[2025-03-26T16:36:45.760+0000] {processor.py:186} INFO - Started process (PID=1086) to work on /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:36:45.764+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/api_etl_pipeline.py for tasks to queue
+[2025-03-26T16:36:45.769+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:36:45.768+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:36:45.823+0000] {processor.py:925} INFO - DAG(s) 'test_postgres_connection', 'aqi_etl_pipeline' retrieved from /opt/airflow/dags/api_etl_pipeline.py
+[2025-03-26T16:36:45.860+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:36:45.860+0000] {dag.py:3239} INFO - Sync 2 DAGs
+[2025-03-26T16:36:45.902+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:36:45.902+0000] {dag.py:4180} INFO - Setting next_dagrun for aqi_etl_pipeline to 2025-03-26 00:00:00+00:00, run_after=2025-03-27 00:00:00+00:00
+[2025-03-26T16:36:45.906+0000] {logging_mixin.py:190} INFO - [2025-03-26T16:36:45.906+0000] {dag.py:4180} INFO - Setting next_dagrun for test_postgres_connection to None, run_after=None
+[2025-03-26T16:36:45.932+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/api_etl_pipeline.py took 0.182 seconds

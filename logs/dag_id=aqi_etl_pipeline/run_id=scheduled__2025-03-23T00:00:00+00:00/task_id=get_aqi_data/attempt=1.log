@@ -1,0 +1,62 @@
+[2025-03-26T14:30:57.244+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-26T14:30:57.389+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aqi_etl_pipeline.get_aqi_data scheduled__2025-03-23T00:00:00+00:00 [queued]>
+[2025-03-26T14:30:57.477+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aqi_etl_pipeline.get_aqi_data scheduled__2025-03-23T00:00:00+00:00 [queued]>
+[2025-03-26T14:30:57.478+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-03-26T14:30:57.622+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): get_aqi_data> on 2025-03-23 00:00:00+00:00
+[2025-03-26T14:30:57.690+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'aqi_etl_pipeline', 'get_aqi_data', 'scheduled__2025-03-23T00:00:00+00:00', '--job-id', '270', '--raw', '--subdir', 'DAGS_FOLDER/api_etl_pipeline.py', '--cfg-path', '/tmp/tmp639yzi8a']
+[2025-03-26T14:30:57.701+0000] {standard_task_runner.py:105} INFO - Job 270: Subtask get_aqi_data
+[2025-03-26T14:30:57.718+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=232) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-03-26T14:30:57.719+0000] {standard_task_runner.py:72} INFO - Started process 327 to run task
+[2025-03-26T14:30:57.939+0000] {task_command.py:467} INFO - Running <TaskInstance: aqi_etl_pipeline.get_aqi_data scheduled__2025-03-23T00:00:00+00:00 [running]> on host bc76e43d85cd
+[2025-03-26T14:30:58.668+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='aqi_etl_pipeline' AIRFLOW_CTX_TASK_ID='get_aqi_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-23T00:00:00+00:00'
+[2025-03-26T14:30:58.687+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-26T14:30:58.692+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-26T14:30:58.699+0000] {logging_mixin.py:190} INFO - Current task name:get_aqi_data state:running start_date:2025-03-26 14:30:57.401510+00:00
+[2025-03-26T14:30:58.699+0000] {logging_mixin.py:190} INFO - Dag name:aqi_etl_pipeline and current dag run status:running
+[2025-03-26T14:30:58.704+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-03-26T14:30:59.625+0000] {logging_mixin.py:190} INFO - API URL: https://api.airvisual.com/v2/city?city=Bangkok&state=Bangkok&country=Thailand&key=***
+[2025-03-26T14:30:59.634+0000] {logging_mixin.py:190} INFO - Response Status Code: 200
+[2025-03-26T14:30:59.635+0000] {logging_mixin.py:190} INFO - Response Text: {"status":"success","data":{"city":"Bangkok","state":"Bangkok","country":"Thailand","location":{"type":"Point","coordinates":[100.4888394,13.7292915]},"current":{"pollution":{"ts":"2025-03-26T14:00:00.000Z","aqius":123,"mainus":"p2","aqicn":62,"maincn":"p2"},"weather":{"ts":"2025-03-26T14:00:00.000Z","tp":31,"pr":1005,"hu":77,"ws":7.21,"wd":186,"ic":"04n"}}}}
+[2025-03-26T14:30:59.638+0000] {logging_mixin.py:190} INFO - Parsed JSON: {
+  "status": "success",
+  "data": {
+    "city": "Bangkok",
+    "state": "Bangkok",
+    "country": "Thailand",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.4888394,
+        13.7292915
+      ]
+    },
+    "current": {
+      "pollution": {
+        "ts": "2025-03-26T14:00:00.000Z",
+        "aqius": 123,
+        "mainus": "p2",
+        "aqicn": 62,
+        "maincn": "p2"
+      },
+      "weather": {
+        "ts": "2025-03-26T14:00:00.000Z",
+        "tp": 31,
+        "pr": 1005,
+        "hu": 77,
+        "ws": 7.21,
+        "wd": 186,
+        "ic": "04n"
+      }
+    }
+  }
+}
+[2025-03-26T14:30:59.662+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-26T14:30:59.707+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-03-26T14:30:59.716+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=aqi_etl_pipeline, task_id=get_aqi_data, run_id=scheduled__2025-03-23T00:00:00+00:00, execution_date=20250323T000000, start_date=20250326T143057, end_date=20250326T143059
+[2025-03-26T14:30:59.779+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-26T14:30:59.780+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-26T14:30:59.780+0000] {logging_mixin.py:190} INFO - Dag name:aqi_etl_pipeline queued_at:2025-03-26 14:30:37.404249+00:00
+[2025-03-26T14:30:59.784+0000] {logging_mixin.py:190} INFO - Task hostname:bc76e43d85cd operator:PythonOperator
+[2025-03-26T14:30:59.874+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-26T14:31:00.028+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-26T14:31:00.050+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
