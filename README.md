@@ -28,8 +28,7 @@ capstone-aqi-project/
 - PostgreSQL
 
 ### ขั้นตอนการติดตั้ง
-1. คัดลอกโค้ดจาก Repository:
-   
+1. คัดลอกโค้ดจาก Repository:  
    git clone https://github.com/jiwjiww/capstone-api.git
    cd capstone-api
    
@@ -48,7 +47,7 @@ capstone-aqi-project/
 - DAG `aqi_etl_pipeline.py` จะทำงานอัตโนมัติตามเวลาที่กำหนดไว้ใน Airflow
 - สามารถดูบันทึกและรายละเอียดการทำงานได้ผ่าน Airflow UI หรือใช้คำสั่ง CLI: 
   airflow dags list
-  airflow tasks test aqi_etl_pipeline get_aqi_data 2024-04-01
+  airflow tasks test aqi_etl_pipeline get_aqi_data 2025-01-01
   
 
 ## กระบวนการทำงานของ Data Pipeline
