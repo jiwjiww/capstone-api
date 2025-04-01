@@ -47,6 +47,7 @@ capstone-aqi-project/
 - DAG `aqi_etl_pipeline.py` จะทำงานอัตโนมัติตามเวลาที่กำหนดไว้ใน Airflow
 - สามารถดูบันทึกและรายละเอียดการทำงานได้ผ่าน Airflow UI หรือใช้คำสั่ง CLI: 
   airflow dags list
+  
   airflow tasks test aqi_etl_pipeline get_aqi_data 2025-01-01
   
 
