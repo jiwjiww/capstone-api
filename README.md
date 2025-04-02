@@ -70,9 +70,9 @@ SELECT * FROM aqi_data LIMIT 10;
 
 
 ## การพัฒนาในอนาคต
-- ใช้ **dbt** สำหรับการแปลงข้อมูลเพิ่มเติม เช่น การสร้างตาราง Aggregation หรือ Cleansing Model
-- ผสานรวม **Power BI** หรือ **Tableau** สำหรับการแสดงผลข้อมูล
-- ขยายการรองรับไปยังเมืองอื่น ๆ
+- ขยายระบบให้รองรับเมืองอื่น ๆ ในประเทศไทย
+- เพิ่ม Machine Learning เพื่อคาดการณ์ค่า AQI
+- เชื่อมต่อกับ Power BI หรือ Google Data Studio เพื่อการวิเคราะห์เชิงลึก
 
 ## Troubleshooting
 ### 1. Airflow Web UI ไม่ทำงาน
@@ -100,6 +100,5 @@ SELECT * FROM aqi_data LIMIT 10;
 ## ผู้พัฒนา
 - **ชวิศา ณ น่าน** ([67130827@dpu.ac.th](mailto:67130827@dpu.ac.th))
 
-## License
-โครงการนี้อยู่ภายใต้ลิขสิทธิ์ **MIT License**
+
 
