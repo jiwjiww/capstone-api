@@ -21,10 +21,10 @@
 
 capstone-aqi-project/
 1. dags/                          # โฟลเดอร์เก็บไฟล์ DAG ของ Airflow
-│   1.1 aqi_etl_pipeline.py       # DAG หลักสำหรับดึงข้อมูล ตรวจสอบข้อมูล โหลดข้อมูล
+1.1 aqi_etl_pipeline.py           # DAG หลักสำหรับดึงข้อมูล ตรวจสอบข้อมูล โหลดข้อมูล
 2. sql/                           # โฟลเดอร์เก็บ SQL Queries
-│   2.1 create_tables.sql         # คำสั่งสร้างตารางใน PostgreSQL
-│   2.2 queries.sql               # SQL สำหรับวิเคราะห์ข้อมูล
+2.1 create_tables.sql             # คำสั่งสร้างตารางใน PostgreSQL
+2.2 queries.sql                   # SQL สำหรับวิเคราะห์ข้อมูล
 3. dbt/                           # โฟลเดอร์เก็บไฟล์ dbt สำหรับการแปลงข้อมู
 4. docker-compose.yml             # ไฟล์ตั้งค่า Docker
 5. README.md                      # คำอธิบายโปรเจกต์
