@@ -26,6 +26,7 @@ This project is an automated data pipeline for collecting and analyzing daily **
 ---
 
 ## 📁 Project Structure
+```bash
 capstone-aqi/
 ├── dags/                         # Airflow DAGs สำหรับควบคุม ETL pipeline
 │   └── aqi_etl_pipeline.py       # DAG หลักสำหรับดึง ตรวจสอบ และโหลดข้อมูล AQI
