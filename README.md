@@ -70,7 +70,7 @@ docker-compose up -d
 
 # 4. (Optional) Run Streamlit app
 cd streamlit_app
-streamlit run dashboard.py
+streamlit run business_qa_dashboard.py
 
 ```
 ## 🌐 Access Airflow
