@@ -54,14 +54,17 @@ docker-compose up -d
 cd streamlit_app
 streamlit run dashboard.py
 
+---
 🌐 Access Airflow
 URL: http://localhost:8080
 Username: airflow
 Password: airflow
 
+---
 🌐 Access Streamlit Dashboard
 URL: http://localhost:8501
 
+---
 🔄 ETL Pipeline Workflow (Airflow DAG: aqi_etl_pipeline)
 Step	Task ID	               Description
 1	   get_aqi_data :	         Retrieve AQI data from external API using requests
@@ -69,10 +72,12 @@ Step	Task ID	               Description
 3	   load_aqi_to_postgres :  Load the cleaned data into PostgreSQL
 4	   run_dbt_models :        Run dbt to create data models (optional)
 
+---
 🧪 Check Data in PostgreSQL
 ```bash
 SELECT * FROM aqi_data LIMIT 10;
 
+---
 📊 Business Questions Answered
 1. Which city had the highest AQI during the past week?
 2. Which city had the lowest AQI in the past 3 months?
@@ -80,12 +85,14 @@ SELECT * FROM aqi_data LIMIT 10;
 4. How many days this month did the AQI exceed 100 in each city?
 5. What is the daily AQI trend this week across Bangkok, Nakhon Pathom, and Pathum Thani?
 
+---
 📈 Streamlit Dashboard
 The business_qa_dashboard.py script inside streamlit_app/ folder allows users to explore AQI trends interactively with:
 - Time-series graphs
 - Average AQI by city
 - Daily and monthly comparisons
 
+---
 🔮 Future Enhancements
 - Add support for additional cities in Thailand
 - Use Machine Learning for AQI forecasting
@@ -93,6 +100,7 @@ The business_qa_dashboard.py script inside streamlit_app/ folder allows users to
 - Add user interactivity to the dashboard (e.g., filters, date ranges, city selection)
 - Implement real-time data updates with API integration
 
+---
 🛠 Troubleshooting
 ❌ Airflow Web UI Not Working
 ```bash
@@ -112,6 +120,7 @@ pip install -r requirements.txt
 # Start the app
 streamlit run streamlit_app/bisiness_qa_dashboard.py
 
+---
 👩‍💻 Developer
 ชวิศา ณ น่าน
 📧 67130827@dpu.ac.th
