@@ -82,11 +82,10 @@ streamlit run dashboard.py
 - URL: http://localhost:8501
 
 ## 🔄 ETL Pipeline Workflow (Airflow DAG: aqi_etl_pipeline)
-Step	Task ID	               Description
-1.	   get_aqi_data :	        Retrieve AQI data from external API using requests
-2.	   validate_aqi_data	:   Clean and validate data using pandas
-3.	   load_aqi_to_postgres : Load the cleaned data into PostgreSQL
-4.	   run_dbt_models :       Run dbt to create data models (optional)
+1. get_aqi_data :	Retrieve AQI data from external API using requests
+2. validate_aqi_data : Clean and validate data using pandas
+3. load_aqi_to_postgres : Load the cleaned data into PostgreSQL
+4. run_dbt_models : Run dbt to create data models (optional)
 
 ## 🧪 Check Data in PostgreSQL
 ```bash
