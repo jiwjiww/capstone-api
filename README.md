@@ -28,24 +28,24 @@ This project is an automated data pipeline for collecting and analyzing daily **
 ## 📁 Project Structure
 ```bash
 capstone-aqi/
-├── dags/                         # Airflow DAGs สำหรับควบคุม ETL pipeline
-│   └── aqi_etl_pipeline.py       # DAG หลักสำหรับดึง ตรวจสอบ และโหลดข้อมูล AQI
+├── dags/                         # Airflow DAGs for controlling the ETL pipeline
+│   └── aqi_etl_pipeline.py       # Main DAG for extracting, validating, and loading AQI data
 │
-├── sql/                          # คำสั่ง SQL สำหรับสร้างตารางและการวิเคราะห์
-│   ├── create_tables.sql         # สคริปต์สำหรับสร้างตารางใน PostgreSQL
-│   └── queries.sql               # SQL สำหรับตอบคำถามทางธุรกิจ
+├── sql/                          # SQL scripts for table creation and analysis
+│   ├── create_tables.sql         # Script to create tables in PostgreSQL
+│   └── queries.sql               # SQL queries for answering business questions
 │
-├── dbt/                          # ไฟล์สำหรับ dbt (data transformation) 
-│   ├── models/                   # โฟลเดอร์เก็บ model ต่าง ๆ ที่เขียนด้วย SQL
-│   ├── dbt_project.yml           # ไฟล์ตั้งค่าโปรเจกต์ dbt
-│   └── profiles.yml              # ไฟล์กำหนดการเชื่อมต่อกับ database สำหรับ dbt
+├── dbt/                          # Files for dbt (data transformation) 
+│   ├── models/                   # Folder containing models written in SQLL
+│   ├── dbt_project.yml           # dbt project configuration file
+│   └── profiles.yml              # dbt database connection settings file
 │
-├── streamlit_app/                # แอป Streamlit สำหรับสร้าง dashboard
-│   └── business_qa_dashboard.py  # ตัวแอปหลักแสดงผล AQI แบบ interactive
+├── streamlit_app/                # Streamlit app for building the dashboard
+│   └── business_qa_dashboard.py  # Main app file displaying interactive AQI data
 │
-├── docker-compose.yml            # ไฟล์ตั้งค่าการทำงานร่วมของ Docker containers
-├── .env                          # ตัวแปรสภาพแวดล้อม เช่น API keys, DB config
-└── README.md                     # เอกสารอธิบายโปรเจกต์
+├── docker-compose.yml            # Docker Compose configuration file for container orchestration
+├── .env                          # Environment variables such as API keys, DB config
+└── README.md                     # Project documentation
 
 
 ```
