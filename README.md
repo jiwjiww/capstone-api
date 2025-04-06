@@ -1,104 +1,127 @@
-# ระบบดึงข้อมูลคุณภาพอากาศ (Air Quality Data Pipeline)
+# 🌫️ AQI Data Pipeline for Bangkok, Nakhon Pathom, and Pathum Thani
 
-## ภาพรวม
-โครงการนี้เป็นระบบดึงและประมวลผลข้อมูลดัชนีคุณภาพอากาศ (AQI) สำหรับกรุงเทพฯ นครปฐม และปทุมธานี โดยใช้ **Apache Airflow** และ **PostgreSQL** ระบบนี้ช่วยให้สามารถเก็บรวบรวม ทำความสะอาด และจัดเก็บข้อมูลเพื่อการวิเคราะห์ต่อไปได้อย่างอัตโนมัติ
+## 🧾 Project Overview
+This project is an automated data pipeline for collecting and analyzing daily **Air Quality Index (AQI)** data for Bangkok, Nakhon Pathom, and Pathum Thani using **Apache Airflow**, **PostgreSQL**, **dbt**, and **Streamlit**. The pipeline fetches AQI data from the AirVisual API, transforms and validates it, stores it in a relational database, and visualizes it through an interactive web dashboard.
 
-## วัตถุประสงค์ของโครงการ
-1. ดึงข้อมูล AQI รายวันจาก AirVisual API
-2. แปลงข้อมูลให้อยู่ในรูปแบบที่เหมาะสมกับการใช้งาน
-3. ตรวจสอบคุณภาพของข้อมูล (Data Quality Check)
-4. จัดเก็บข้อมูลใน PostgreSQL
-5. ใช้ SQL เพื่อวิเคราะห์ข้อมูลและตอบคำถามทางธุรกิจ
-6. สร้าง Dashboard เพื่อนำเสนอข้อมูล AQI
+---
 
-## คุณสมบัติของโครงการ
-- **ดึงข้อมูล**: รับข้อมูล AQI จาก API ภายนอก
-- **แปลงข้อมูล**: ทำความสะอาดและจัดรูปแบบข้อมูลให้เหมาะสมกับการใช้งาน
-- **จัดเก็บข้อมูล**: บันทึกข้อมูลลงในฐานข้อมูล PostgreSQL
-- **ระบบอัตโนมัติ**: ใช้ Apache Airflow ในการกำหนดตารางเวลาและติดตามกระบวนการ ETL
+## 🎯 Objectives
+1. Fetch daily AQI data from the AirVisual API.
+2. Transform and clean the data into an analysis-ready format.
+3. Validate data quality.
+4. Load cleaned data into PostgreSQL.
+5. Use SQL & dbt to model data and answer business questions.
+6. Visualize AQI data interactively with Streamlit.
 
-## โครงสร้างโครงการ
+---
 
-capstone-aqi-project/
-1. dags/                          # โฟลเดอร์เก็บไฟล์ DAG ของ Airflow
-- aqi_etl_pipeline.py           # DAG หลักสำหรับดึงข้อมูล ตรวจสอบข้อมูล โหลดข้อมูล
-2. sql/                           # โฟลเดอร์เก็บ SQL Queries
-- create_tables.sql             # คำสั่งสร้างตารางใน PostgreSQL
-- queries.sql                   # SQL สำหรับวิเคราะห์ข้อมูล
-3. dbt/                           # โฟลเดอร์เก็บไฟล์ dbt สำหรับการแปลงข้อมู
-4. docker-compose.yml             # ไฟล์ตั้งค่า Docker
-5. README.md                      # คำอธิบายโปรเจกต์
+## ⚙️ Features
+- ⏬ **Automated Data Ingestion** via Airflow DAGs  
+- 🧼 **Data Cleaning & Transformation** using Python and dbt  
+- 🗄️ **Centralized Storage** in PostgreSQL  
+- 📊 **Interactive Dashboards** using Streamlit  
+- 📋 **Data Quality Validation**  
+- 🧠 **Analytical SQL Queries** and business insights
 
-## การติดตั้ง
-### ข้อกำหนดเบื้องต้น
+---
+
+## 📁 Project Structure
+capstone-aqi-project/ ├── dags/ # Airflow DAGs │ └── aqi_etl_pipeline.py ├── sql/ # Raw SQL queries │ ├── create_tables.sql │ └── queries.sql ├── dbt/ # dbt project files │ ├── models/ │ ├── dbt_project.yml │ └── profiles.yml ├── streamlit_app/ # Streamlit dashboard app │ └── dashboard.py ├── docker-compose.yml # Docker orchestration ├── .env # Environment variables └── README.md # Project documentation
+
+
+---
+
+## 🚀 Installation & Setup
+
+### 📌 Prerequisites
 - Docker & Docker Compose
-- Apache Airflow
-- PostgreSQL
+- Git
+- Internet access (for API)
 
-### ขั้นตอนการติดตั้ง
-1. คัดลอกโค้ดจาก Repository:
-   git clone https://github.com/jiwjiww/capstone-api.git
-   cd capstone-api
+### 🧰 Setup Steps
+```bash
+# 1. Clone the repository
+git clone https://github.com/jiwjiww/capstone-api.git
+cd capstone-api
 
-2. ตั้งค่าตัวแปรสภาพแวดล้อม:
-   cp .env.example .env
+# 2. Configure environment variables
+cp .env.example .env
 
-3. เริ่มต้นระบบด้วย Docker Compose:
-   docker-compose up -d
+# 3. Start backend services
+docker-compose up -d
 
-4. เข้าใช้งาน Airflow Web UI:
-   - URL: [http://localhost:8080](http://localhost:8080)
-   - **ชื่อผู้ใช้เริ่มต้น**: `airflow`
-   - **รหัสผ่านเริ่มต้น**: `airflow`
+# 4. (Optional) Run Streamlit app
+cd streamlit_app
+streamlit run dashboard.py
 
-## วิธีการใช้งาน
-- DAG `aqi_etl_pipeline.py` จะทำงานอัตโนมัติตามเวลาที่กำหนดไว้ใน Airflow
-- สามารถดูบันทึกและรายละเอียดการทำงานได้ผ่าน Airflow UI หรือใช้คำสั่ง CLI:
-  - airflow dags list
-  - airflow tasks test aqi_etl_pipeline get_aqi_data 2025-01-01
+🌐 Access Airflow
+URL: http://localhost:8080
 
+Username: airflow
 
-## กระบวนการทำงานของ Data Pipeline
-1. **get_aqi_data**: ดึงข้อมูล AQI จาก API ภายนอกโดยใช้ `requests` และ Airflow `HTTPOperator`
-2. **validate_aqi_data**: ทำความสะอาดและแปลงข้อมูลโดยใช้ `pandas`
-3. **load_aqi_to_postgres**: โหลดข้อมูลลง PostgreSQL โดยใช้ `PostgreSQL Hook`
-4. **PostgreSQL Database**: จัดเก็บข้อมูลที่ผ่านการแปลงแล้วเพื่อการวิเคราะห์
+Password: airflow
 
-## วิธีตรวจสอบข้อมูลใน PostgreSQL
-สามารถใช้คำสั่ง SQL เพื่อตรวจสอบข้อมูลที่โหลดเข้าไปแล้ว:
+🌐 Access Streamlit Dashboard
+URL: http://localhost:8501
+
+🔄 ETL Pipeline Workflow (Airflow DAG: aqi_etl_pipeline)
+Step	Task ID	Description
+1	get_aqi_data :	Retrieve AQI data from external API using requests
+2	validate_aqi_data	: Clean and validate data using pandas
+3	load_aqi_to_postgres : 	Load the cleaned data into PostgreSQL
+4	run_dbt_models : Run dbt to create data models (optional)
+
+🧪 Check Data in PostgreSQL
 SELECT * FROM aqi_data LIMIT 10;
 
+📊 Business Questions Answered
+Which city had the highest AQI during the past week?
 
-## การพัฒนาในอนาคต
-- ขยายระบบให้รองรับเมืองอื่น ๆ ในประเทศไทย
-- เพิ่ม Machine Learning เพื่อคาดการณ์ค่า AQI
-- เชื่อมต่อกับ Power BI หรือ Google Data Studio เพื่อการวิเคราะห์เชิงลึก
+Which city had the lowest AQI in the past 3 months?
 
-## Troubleshooting
-### 1. Airflow Web UI ไม่ทำงาน
-- ตรวจสอบสถานะของ container:
-  docker-compose ps
+What is the average AQI this week for each city?
 
-- ดู logs ของ Airflow Web Server:
-  docker-compose logs airflow-webserver
+How many days this month did the AQI exceed 100 in each city?
 
-- ลองรีสตาร์ทบริการ:
-  docker-compose restart airflow-webserver
+What is the daily AQI trend this week across Bangkok, Nakhon Pathom, and Pathum Thani?
 
+📈 Streamlit Dashboard
+The business_qa_dashboard.py script inside streamlit_app/ folder allows users to explore AQI trends interactively with:
 
-### 2. PostgreSQL ไม่ทำงาน
-- ตรวจสอบสถานะของ PostgreSQL container:
-  docker-compose ps
+Time-series graphs
 
-- ดู logs:
-  docker-compose logs postgres
+Average AQI by city
 
-- ลองรีสตาร์ท:
-  docker-compose restart postgres
+Daily and monthly comparisons
 
+🔮 Future Enhancements
+Add support for additional cities in Thailand
 
-## ผู้พัฒนา
-- **ชวิศา ณ น่าน** ([67130827@dpu.ac.th](mailto:67130827@dpu.ac.th))
+Use Machine Learning for AQI forecasting
 
+Deploy the Streamlit dashboard on the cloud (e.g., Streamlit Cloud, Heroku, or AWS EC2)
+
+Add user interactivity to the dashboard (e.g., filters, date ranges, city selection)
+
+Implement real-time data updates with API integration
 
 
+🛠 Troubleshooting
+❌ Airflow Web UI Not Working
+docker-compose ps
+docker-compose logs airflow-webserver
+docker-compose restart airflow-webserver
+❌ PostgreSQL Not Working
+docker-compose ps
+docker-compose logs postgres
+docker-compose restart postgres
+❌ Streamlit App Not Running
+# Make sure required packages are installed
+pip install -r requirements.txt
+
+# Start the app
+streamlit run streamlit_app/bisiness_qa_dashboard.py
+
+👩‍💻 Developer
+ชวิศา ณ น่าน
+📧 67130827@dpu.ac.th
