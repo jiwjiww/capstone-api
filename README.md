@@ -48,8 +48,7 @@ capstone-aqi/
 └── README.md                     # เอกสารอธิบายโปรเจกต์
 
 
----
-
+```
 ## 🚀 Installation & Setup
 
 ### 📌 Prerequisites
@@ -73,27 +72,27 @@ docker-compose up -d
 cd streamlit_app
 streamlit run dashboard.py
 
-
-🌐 Access Airflow
+```
+## 🌐 Access Airflow
 URL: http://localhost:8080
 Username: airflow
 Password: airflow
 
-🌐 Access Streamlit Dashboard
+## 🌐 Access Streamlit Dashboard
 URL: http://localhost:8501
 
 
-🔄 ETL Pipeline Workflow (Airflow DAG: aqi_etl_pipeline)
+## 🔄 ETL Pipeline Workflow (Airflow DAG: aqi_etl_pipeline)
 Step	Task ID	               Description
 1	   get_aqi_data :	        Retrieve AQI data from external API using requests
 2	   validate_aqi_data	:   Clean and validate data using pandas
 3	   load_aqi_to_postgres : Load the cleaned data into PostgreSQL
 4	   run_dbt_models :       Run dbt to create data models (optional)
 
-🧪 Check Data in PostgreSQL
+## 🧪 Check Data in PostgreSQL
 SELECT * FROM aqi_data LIMIT 10;
 
-📊 Business Questions Answered
+## 📊 Business Questions Answered
 1. Which city had the highest AQI during the past week?
 2. Which city had the lowest AQI in the past 3 months?
 3. What is the average AQI this week for each city?
@@ -101,38 +100,41 @@ SELECT * FROM aqi_data LIMIT 10;
 5. What is the daily AQI trend this week across Bangkok, Nakhon Pathom, and Pathum Thani?
 
 
-📈 Streamlit Dashboard
+## 📈 Streamlit Dashboard
 The business_qa_dashboard.py script inside streamlit_app/ folder allows users to explore AQI trends interactively with:
 - Time-series graphs
 - Average AQI by city
 - Daily and monthly comparisons
 
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 - Add support for additional cities in Thailand
 - Use Machine Learning for AQI forecasting
 - Deploy the Streamlit dashboard on the cloud (e.g., Streamlit Cloud, Heroku, or AWS EC2)
 - Add user interactivity to the dashboard (e.g., filters, date ranges, city selection)
 - Implement real-time data updates with API integration
 
-🛠 Troubleshooting
-❌ Airflow Web UI Not Working
+## 🛠 Troubleshooting
+### ❌ Airflow Web UI Not Working
+```bash
 docker-compose ps
 docker-compose logs airflow-webserver
 docker-compose restart airflow-webserver
-
-❌ PostgreSQL Not Working
+```
+### ❌ PostgreSQL Not Working
+```bash
 docker-compose ps
 docker-compose logs postgres
 docker-compose restart postgres
-
-❌ Streamlit App Not Running
+```
+### ❌ Streamlit App Not Running
+```bash
 # Make sure required packages are installed
 pip install -r requirements.txt
 # Start the app
 streamlit run streamlit_app/bisiness_qa_dashboard.py
 
-
-👩‍💻 Developer
+```
+## 👩‍💻 Developer
 ชวิศา ณ น่าน
 📧 67130827@dpu.ac.th
