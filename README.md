@@ -68,7 +68,7 @@ cp .env.example .env
 # 3. Start backend services
 docker-compose up -d
 
-# 4. (Optional) Run Streamlit app
+# 4. Run Streamlit app
 cd streamlit_app
 streamlit run business_qa_dashboard.py
 
@@ -85,7 +85,7 @@ streamlit run business_qa_dashboard.py
 1. get_aqi_data :	Retrieve AQI data from external API using requests
 2. validate_aqi_data : Clean and validate data using pandas
 3. load_aqi_to_postgres : Load the cleaned data into PostgreSQL
-4. run_dbt_models : Run dbt to create data models (optional)
+4. run_dbt_models : Run dbt to create data models 
 
 ## 🧪 Check Data in PostgreSQL
 ```bash
