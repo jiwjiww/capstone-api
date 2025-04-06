@@ -136,5 +136,5 @@ streamlit run streamlit_app/bisiness_qa_dashboard.py
 
 ```
 ## 👩‍💻 Developer
-ชวิศา ณ น่าน
-📧 67130827@dpu.ac.th
+- ชวิศา ณ น่าน
+- 📧 67130827@dpu.ac.th
