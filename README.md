@@ -70,38 +70,42 @@ Step	Task ID	               Description
 4	   run_dbt_models :        Run dbt to create data models (optional)
 
 🧪 Check Data in PostgreSQL
+```bash
 SELECT * FROM aqi_data LIMIT 10;
 
 📊 Business Questions Answered
-Which city had the highest AQI during the past week?
-Which city had the lowest AQI in the past 3 months?
-What is the average AQI this week for each city?
-How many days this month did the AQI exceed 100 in each city?
-What is the daily AQI trend this week across Bangkok, Nakhon Pathom, and Pathum Thani?
+1. Which city had the highest AQI during the past week?
+2. Which city had the lowest AQI in the past 3 months?
+3. What is the average AQI this week for each city?
+4. How many days this month did the AQI exceed 100 in each city?
+5. What is the daily AQI trend this week across Bangkok, Nakhon Pathom, and Pathum Thani?
 
 📈 Streamlit Dashboard
 The business_qa_dashboard.py script inside streamlit_app/ folder allows users to explore AQI trends interactively with:
-Time-series graphs
-Average AQI by city
-Daily and monthly comparisons
+- Time-series graphs
+- Average AQI by city
+- Daily and monthly comparisons
 
 🔮 Future Enhancements
-Add support for additional cities in Thailand
-Use Machine Learning for AQI forecasting
-Deploy the Streamlit dashboard on the cloud (e.g., Streamlit Cloud, Heroku, or AWS EC2)
-Add user interactivity to the dashboard (e.g., filters, date ranges, city selection)
-Implement real-time data updates with API integration
+- Add support for additional cities in Thailand
+- Use Machine Learning for AQI forecasting
+- Deploy the Streamlit dashboard on the cloud (e.g., Streamlit Cloud, Heroku, or AWS EC2)
+- Add user interactivity to the dashboard (e.g., filters, date ranges, city selection)
+- Implement real-time data updates with API integration
 
 🛠 Troubleshooting
 ❌ Airflow Web UI Not Working
+```bash
 docker-compose ps
 docker-compose logs airflow-webserver
 docker-compose restart airflow-webserver
 ❌ PostgreSQL Not Working
+```bash
 docker-compose ps
 docker-compose logs postgres
 docker-compose restart postgres
 ❌ Streamlit App Not Running
+```bash
 # Make sure required packages are installed
 pip install -r requirements.txt
 
