@@ -26,7 +26,25 @@ This project is an automated data pipeline for collecting and analyzing daily **
 ---
 
 ## 📁 Project Structure
-capstone-aqi-project/ ├── dags/ # Airflow DAGs │ └── aqi_etl_pipeline.py ├── sql/ # Raw SQL queries │ ├── create_tables.sql │ └── queries.sql ├── dbt/ # dbt project files │ ├── models/ │ ├── dbt_project.yml │ └── profiles.yml ├── streamlit_app/ # Streamlit dashboard app │ └── dashboard.py ├── docker-compose.yml # Docker orchestration ├── .env # Environment variables └── README.md # Project documentation
+capstone-aqi/
+├── dags/                         # Airflow DAGs สำหรับควบคุม ETL pipeline
+│   └── aqi_etl_pipeline.py       # DAG หลักสำหรับดึง ตรวจสอบ และโหลดข้อมูล AQI
+│
+├── sql/                          # คำสั่ง SQL สำหรับสร้างตารางและการวิเคราะห์
+│   ├── create_tables.sql         # สคริปต์สำหรับสร้างตารางใน PostgreSQL
+│   └── queries.sql               # SQL สำหรับตอบคำถามทางธุรกิจ
+│
+├── dbt/                          # ไฟล์สำหรับ dbt (data transformation) 
+│   ├── models/                   # โฟลเดอร์เก็บ model ต่าง ๆ ที่เขียนด้วย SQL
+│   ├── dbt_project.yml           # ไฟล์ตั้งค่าโปรเจกต์ dbt
+│   └── profiles.yml              # ไฟล์กำหนดการเชื่อมต่อกับ database สำหรับ dbt
+│
+├── streamlit_app/                # แอป Streamlit สำหรับสร้าง dashboard
+│   └── business_qa_dashboard.py  # ตัวแอปหลักแสดงผล AQI แบบ interactive
+│
+├── docker-compose.yml            # ไฟล์ตั้งค่าการทำงานร่วมของ Docker containers
+├── .env                          # ตัวแปรสภาพแวดล้อม เช่น API keys, DB config
+└── README.md                     # เอกสารอธิบายโปรเจกต์
 
 
 ---
@@ -54,6 +72,7 @@ docker-compose up -d
 cd streamlit_app
 streamlit run dashboard.py
 
+
 🌐 Access Airflow
 URL: http://localhost:8080
 Username: airflow
@@ -62,12 +81,13 @@ Password: airflow
 🌐 Access Streamlit Dashboard
 URL: http://localhost:8501
 
+
 🔄 ETL Pipeline Workflow (Airflow DAG: aqi_etl_pipeline)
 Step	Task ID	               Description
-1	   get_aqi_data :	         Retrieve AQI data from external API using requests
-2	   validate_aqi_data	:    Clean and validate data using pandas
-3	   load_aqi_to_postgres :  Load the cleaned data into PostgreSQL
-4	   run_dbt_models :        Run dbt to create data models (optional)
+1	   get_aqi_data :	        Retrieve AQI data from external API using requests
+2	   validate_aqi_data	:   Clean and validate data using pandas
+3	   load_aqi_to_postgres : Load the cleaned data into PostgreSQL
+4	   run_dbt_models :       Run dbt to create data models (optional)
 
 🧪 Check Data in PostgreSQL
 SELECT * FROM aqi_data LIMIT 10;
@@ -79,11 +99,13 @@ SELECT * FROM aqi_data LIMIT 10;
 4. How many days this month did the AQI exceed 100 in each city?
 5. What is the daily AQI trend this week across Bangkok, Nakhon Pathom, and Pathum Thani?
 
+
 📈 Streamlit Dashboard
 The business_qa_dashboard.py script inside streamlit_app/ folder allows users to explore AQI trends interactively with:
 - Time-series graphs
 - Average AQI by city
 - Daily and monthly comparisons
+
 
 🔮 Future Enhancements
 - Add support for additional cities in Thailand
@@ -97,14 +119,15 @@ The business_qa_dashboard.py script inside streamlit_app/ folder allows users to
 docker-compose ps
 docker-compose logs airflow-webserver
 docker-compose restart airflow-webserver
+
 ❌ PostgreSQL Not Working
 docker-compose ps
 docker-compose logs postgres
 docker-compose restart postgres
+
 ❌ Streamlit App Not Running
 # Make sure required packages are installed
 pip install -r requirements.txt
-
 # Start the app
 streamlit run streamlit_app/bisiness_qa_dashboard.py
 
